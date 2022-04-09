@@ -539,3 +539,30 @@ main {
     padding-bottom: 40px;
 }
 
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+#principal{
+    
+    height: 100vh;
+    width: 100%;
+    
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Playfair Display', serif;
+    background-color: #8A77AE;
+}
+
+#planta{
+    
+    height: 100vh;
+    width: 40%;
+    display: flex;
+   flex-direction: row;
+    
+    
+}
+

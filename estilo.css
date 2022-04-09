@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#principal{
+    height: 100vh;
+    background-color: white; /*color fondo*/
+    display: flex;
+    color: black; 
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+#menu{
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-left:  30px;
+}
+nav{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+#contenido{
+    height: 100vh;
+    width: 80%;
+}
+#contenido > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 100px 0 100px; /*ancho */
+    margin-left: 50px; 
+}
+#barra{
+    background-color: #61537a; /*color fondo*/
+    height: 15%; /*LARGO DEL PANEL*/
+    border: 2px ; /*borde*/
+    border-style: solid;
+}
+#barra > h1{
+    text-align: center; /*centramos el texto*/
+}
+#lista{
+    background-color: #8a77ae; /*color fondo*/
+    height: 85%; /*LARGO DEL PANEL*/
+    border: 2px ; /*borde*/
+    border-style: solid;
+    
+}
+#button2{
+    background-color: rgb(238, 208, 246); /*color fondo*/
+    color: black; /*color texto*/
+    padding: 0px 100px 0 100px; /*ancho boton*/
+    height: 10%; /*LARGO DEL boton*/
+    transition: .7s; /*animacion*/
+}
+#button2:hover{
+    background-color: rgb(177, 93, 200); /*color fondo al tener el raton encima del boton*/
+}
+#button2:active{
+    background-color: rgb(66, 13, 82); /*color fondo al activar*/
+    color: white; /*color texto al activar*/
+    transition: .0s; /*animacion*/
+}
+
+

@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#principal{
+    height: 650px;
+    width: auto;
+    background-color: #8a77ae;
+    padding: 0px 100px 0 100px; /*ancho */
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+#barra3{
+
+    border: 2px solid ;
+    border-radius: 40px;
+    height: 50px;
+    width: 60%;
+}
+#barra2{
+
+    border: 2px solid ;
+    border-radius: 40px;
+    height: 65px;
+    width: 30%;
+}
