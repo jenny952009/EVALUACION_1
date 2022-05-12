@@ -210,3 +210,14 @@ footer {
     
 
 }
+#button3{
+    background-color: rgb(255, 41, 41); /*color fondo*/
+    transition: 2s; /*animacion*/
+}
+#button3:hover{
+    background-color: rgb(147, 19, 19); /*color fondo al tener el raton encima del boton*/
+}
+#button3:active{
+    background-color: rgb(153, 130, 30); /*color fondo al activar*/
+    transition: .0s; /*animacion*/
+}

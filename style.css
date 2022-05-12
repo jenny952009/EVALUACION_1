@@ -613,3 +613,7 @@ main {
 #espaciosss{
     gap: 10px;
 }
+
+#estrellas>img{
+    margin: 4%;
+}
