@@ -274,7 +274,7 @@ main {
 .formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
 }
 
 .formulario__label {
@@ -290,7 +290,7 @@ main {
 
 .formulario__input {
     width: 100%;
-    background: #fff;
+    background:rgb(255, 255, 255);
     border: 3px solid transparent;
     border-radius: 3px;
     height: 45px;
@@ -345,7 +345,7 @@ main {
 .formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-    grid-column: span 2;
+    grid-column: span 4;
 }
 
 .formulario__mensaje {
@@ -402,23 +402,23 @@ main {
 
 
 
-/* ----- -----  Estilos para Validacion ----- ----- */
+/* ----- -----  Estilos para Validacion ----- ----- 
 .formulario__grupo-correcto .formulario__validacion-estado {
-    color: #d1ce1e;
+    color: #5d1ed1;
     opacity: 1;
-}
+}*/
 
 .formulario__grupo-incorrecto .formulario__label {
     color: #bb2929;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formulario__grupo-correcto .formulario__validacion-estado {
     color: #bb2929;
     opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-    border: 3px solid #bb2929;
+    border: 3px solid #0b0b0b;
 }
 
 
@@ -605,4 +605,11 @@ main {
 
 #jeilo{
     display: flex;
+}
+#espacios{
+    gap: 20px;
+}
+
+#espaciosss{
+    gap: 10px;
 }
