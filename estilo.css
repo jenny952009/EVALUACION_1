@@ -1,75 +1,105 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-#principal{
+
+#principal {
     height: 100vh;
-    background-color: white; /*color fondo*/
+    background-color: white;
+    /*color fondo*/
     display: flex;
-    color: black; 
+    color: black;
     font-family: 'Grape Nuts', cursive;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-family: 'Playfair Display', serif;
     display: flex;
     flex-direction: column;
 }
-#menu{
+
+#menu {
     height: 100vh;
     width: 20%;
     display: flex;
     flex-direction: column;
-    padding-left:  30px;
+    padding-left: 30px;
 }
-nav{
+
+nav {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
 }
-#contenido{
+
+#contenido {
     height: 100vh;
     width: 100%;
 }
-#contenido > div{
+
+#contenido>div {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 100px 0 100px; /*ancho */
-    margin-left: 160px; 
+    padding: 0px 100px 0 100px;
+    /*ancho */
+    margin: 0 auto;
 }
-#barra{
-    background-color: #61537a; /*color fondo*/
-    
+
+#barra {
+    background-color: #61537a;
+    /*color fondo*/
+
     width: 80%;
-    height: 10%; /*LARGO DEL PANEL*/
-    border: 2px ; /*borde*/
+    height: 10%;
+    /*LARGO DEL PANEL*/
+    border: 2px;
+    /*borde*/
     border-style: solid;
 }
-#barra > h1{
-    text-align: center; /*centramos el texto*/
+
+#barra>h1 {
+    text-align: center;
+    /*centramos el texto*/
 }
-#lista{
-    background-color: #8a77ae; /*color fondo*/
+
+#lista {
+    background-color: #8a77ae;
+    /*color fondo*/
     width: 80%;
-    height: 70%; /*LARGO DEL PANEL*/
-    border: 2px ; /*borde*/
+    height: 70%;
+    /*LARGO DEL PANEL*/
+    border: 2px;
+    /*borde*/
     border-style: solid;
-    
+
 }
-#button2{
-    background-color: rgb(238, 208, 246); /*color fondo*/
-    color: black; /*color texto*/
-    padding: 0px 100px 0 100px; /*ancho boton*/
-    height: 10%; /*LARGO DEL boton*/
-    transition: .7s; /*animacion*/
+
+#button2 {
+    background-color: rgb(238, 208, 246);
+    /*color fondo*/
+    color: black;
+    /*color texto*/
+    padding: 0px 100px 0 100px;
+    /*ancho boton*/
+    height: 10%;
+    /*LARGO DEL boton*/
+    transition: .7s;
+    /*animacion*/
 }
-#button2:hover{
-    background-color: rgb(177, 93, 200); /*color fondo al tener el raton encima del boton*/
+
+#button2:hover {
+    background-color: rgb(177, 93, 200);
+    /*color fondo al tener el raton encima del boton*/
 }
-#button2:active{
-    background-color: rgb(66, 13, 82); /*color fondo al activar*/
-    color: white; /*color texto al activar*/
-    transition: .0s; /*animacion*/
+
+#button2:active {
+    background-color: rgb(66, 13, 82);
+    /*color fondo al activar*/
+    color: white;
+    /*color texto al activar*/
+    transition: .0s;
+    /*animacion*/
 }
+
 /*-------------------------------------------------*/
 .pie-pagina {
     width: 100%;
@@ -137,13 +167,46 @@ nav{
     font-size: 15px;
 }
 
-footer{
-     width: 25%;
-     margin: 0 auto;
+footer {
+    width: 25%;
+    margin: 0 auto;
 }
-.input-group>.form-control, .input-group>.form-select {
+
+.input-group>.form-control,
+.input-group>.form-select {
     /* position: relative; */
     /* flex: 1 1 auto; */
     width: 10px;
     min-width: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .hide {
+        display: none;
+    }
+
+    #contenido>div {
+        padding: 0;
+        margin: 0 auto;
+    }
+    #jeilo{
+        flex-direction: column;
+        
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #lista {
+        width: 100%
+    }
+    #barra{
+        width: 100%;
+    }
+
+}
+#jeilo{
+    display: flex;
+    
+
 }
