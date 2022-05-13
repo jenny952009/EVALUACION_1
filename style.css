@@ -113,6 +113,7 @@ body {
     justify-content: center;
     width:80%;
     display: flex;
+    
 }
 
 
@@ -152,7 +153,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-widht:450px) {
+@media (max-widht:1070px) {
     .form {
         padding: 3.5em 1em;
     }
@@ -273,7 +274,7 @@ main {
 .formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
 }
 
 .formulario__label {
@@ -289,7 +290,7 @@ main {
 
 .formulario__input {
     width: 100%;
-    background: #fff;
+    background:rgb(255, 255, 255);
     border: 3px solid transparent;
     border-radius: 3px;
     height: 45px;
@@ -344,7 +345,7 @@ main {
 .formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-    grid-column: span 2;
+    grid-column: span 4;
 }
 
 .formulario__mensaje {
@@ -401,23 +402,23 @@ main {
 
 
 
-/* ----- -----  Estilos para Validacion ----- ----- */
+/* ----- -----  Estilos para Validacion ----- ----- 
 .formulario__grupo-correcto .formulario__validacion-estado {
-    color: #d1ce1e;
+    color: #5d1ed1;
     opacity: 1;
-}
+}*/
 
 .formulario__grupo-incorrecto .formulario__label {
     color: #bb2929;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formulario__grupo-correcto .formulario__validacion-estado {
     color: #bb2929;
     opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-    border: 3px solid #bb2929;
+    border: 3px solid #0b0b0b;
 }
 
 
@@ -441,8 +442,13 @@ main {
     .formulario__btn {
         width: 100%;
     }
+    .abrazame{
+        flex-direction: column;
+        align-items: center;
+    }
+  
 }
-
+/*---------------------------------------------------*/
 .pie-pagina {
     width: 100%;
     background-color: #42544d;
@@ -516,7 +522,7 @@ main {
     flex: 50%;
 
 }
-
+/*--------------------------------------------------*/
 main {
     max-width: 800px;
     width: 90%;
@@ -529,9 +535,14 @@ main {
     .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
+        
         padding: 35px 0px;
     }
+    
+}
+
+.row{
+    --bs-gutter-x: 0rem !important;
 }
 
 #secayuda{
@@ -565,4 +576,44 @@ main {
     
     
 }
+/*---------------------------------------------------------------*/
+.abrazame{
+    display: flex;align-items: center;
+}
 
+
+.counter-section i { display:block; margin:0 0 10px}
+.counter-section span.counter { color:#000;  display:block; font-family: "Oswald",sans-serif; letter-spacing: 2px}
+.counter-title{ font-size:8px; letter-spacing:2px; text-transform: uppercase}
+.counter-icon {top:25px; position:relative}
+.counter-style2 .counter-title {letter-spacing: 0.55px; float: left;}
+.counter-style2 span.counter {letter-spacing: 0.55px; float: left; margin-right: 10px;}
+.counter-style2 i {float: right; line-height: 26px; margin: 0 10px 0 0}
+.counter-subheadline span {float: right;}  
+
+.medium-icon {
+    font-size: 40px !important;
+    margin-bottom: 15px !important;
+} 
+
+@media screen and (max-width: 900px) {
+    #jeilo{
+        flex-direction: column;    
+        align-items: center;
+    }
+}
+
+#jeilo{
+    display: flex;
+}
+#espacios{
+    gap: 20px;
+}
+
+#espaciosss{
+    gap: 10px;
+}
+
+#estrellas>img{
+    margin: 4%;
+}

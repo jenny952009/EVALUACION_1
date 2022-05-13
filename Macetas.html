@@ -12,9 +12,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@100&family=Rubik+Microbe&family=Rubik+Wet+Paint&display=swap');
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="bg-ligth">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-md navbar-light sticky-top 
             bg-white navbar-main">
 
@@ -57,11 +61,14 @@
                 <form class="d-flex">
 
                     <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
-                        <a href="singup.html" target="blank"><button type="button" class="btn btn-outline-success">Iniciar Sesión</button></a>
+                        <a href="singup.html" target="blank"><button type="button"
+                                class="btn btn-outline-success">Iniciar Sesión</button></a>
                     </li>
-
-                    <a class="nav-link" href="pagina.html" target="blank"><img src="iconos/carrito.png"
-                            alt=60px width=60px></a>
+                    <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
+                        <a href="./historial/INDEX.html" target="#"><button type="button" class="btn btn-outline-success">Mis compras</button></a>
+                      </li>
+                    <a class="nav-link" href="pagina.html" target="blank"><img src="iconos/carrito.png" alt=60px
+                            width=60px></a>
 
                 </form>
             </div>
@@ -69,80 +76,127 @@
     </nav>
 
     <div class="container">
-        <div style="display: flex;padding-left: 500px;">
-            <h2 class="col-12 display-4 text-capitalize mb-3">
-                <br> MACETAS <br>
-
-            </h2>
-        </div>
         <div class="row mt-5">
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+            <div style="width: 100%;
+        text-align: center;">
 
-                <img src="iconos/maceteros colgantes.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    COLGANTES </h3>
+                <h2 class="col-12 display-4 text-capitalize mb-3">
+                    MACETAS 
 
-                <p class="text-muted">
-                    Tamaño: 10 x 8 x 10 cm.
-                    <br>
-                    Material: plástico.
-                    <br>
-                <h3 class="text-capitalize">$2.000</h3>
+                </h2>
+            </div>
+            <!-- justify-content-center para centrar el contenido dentro del row-->
+            <div class="row mt-5 justify-content-center">
+                <!---->
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+                    <img src="iconos/maceteros colgantes.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        COLGANTES </h3>
 
-                <img src="iconos/maceteros cuadrados.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    CUADRADAS </h3>
+                    <p class="text-muted">
+                        Tamaño: 10 x 8 x 10 cm.
+                        <br>
+                        Material: plástico.
+                        <br>
+                    <h3 class="text-capitalize">$2.000</h3>
 
-                <p class="text-muted">
-                    Tamaño: 24 x 24 x 22 cm.
-                    <br>
-                    Material: plástico.
-                    <br>
-                <h3 class="text-capitalize">$4.000</h3>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+                    <img src="iconos/maceteros cuadrados.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        CUADRADAS </h3>
 
-                <img src="iconos/maceteros largos.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    RECTANGULARES </h3>
+                    <p class="text-muted">
+                        Tamaño: 24 x 24 x 22 cm.
+                        <br>
+                        Material: plástico.
+                        <br>
+                    <h3 class="text-capitalize">$4.000</h3>
 
-                <p class="text-muted">
-                    Tamaño: 34 x 16 x 14 cm.
-                    <br>
-                    Material: plástico.
-                    <br>
-                <h3 class="text-capitalize">$2.000</h3>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+                    <img src="iconos/maceteros largos.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        RECTANGULARES </h3>
 
-                <img src="iconos/maceteros redondos.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    REDONDAS </h3>
+                    <p class="text-muted">
+                        Tamaño: 34 x 16 x 14 cm.
+                        <br>
+                        Material: plástico.
+                        <br>
+                    <h3 class="text-capitalize">$2.000</h3>
 
-                <p class="text-muted">
-                    Tamaño: 40 x 40 cm.
-                    <br>
-                    Material: plástico.
-                    <br>
-                <h3 class="text-capitalize">$4.000</h3>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
+                    <img src="iconos/maceteros redondos.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        REDONDAS </h3>
 
+                    <p class="text-muted">
+                        Tamaño: 40 x 40 cm.
+                        <br>
+                        Material: plástico.
+                        <br>
+                    <h3 class="text-capitalize">$4.000</h3>
+
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
+                    <a href="crud.html" target="#"><button type="button" class="btn btn-success">ADMINISTRAR</button></a>
+                  </li>
+            </div>
         </div>
-    </div>
 
 
     </div>
@@ -181,19 +235,23 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
+<script>
+    $(document).ready(function () {
+
+        $('.counter').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+    });  
+</script>

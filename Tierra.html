@@ -12,9 +12,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@100&family=Rubik+Microbe&family=Rubik+Wet+Paint&display=swap');
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="bg-ligth">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-md navbar-light sticky-top 
         bg-white navbar-main">
 
@@ -57,11 +61,14 @@
                 <form class="d-flex">
 
                     <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
-                        <a href="singup.html" target="blank"><button type="button" class="btn btn-outline-success">Iniciar Sesión</button></a>
+                        <a href="singup.html" target="blank"><button type="button"
+                                class="btn btn-outline-success">Iniciar Sesión</button></a>
                     </li>
-
-                    <a class="nav-link" href="pagina.html" target="blank"><img src="iconos/carrito.png"
-                            alt=60px width=60px></a>
+                    <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
+                        <a href="./historial/INDEX.html" target="#"><button type="button" class="btn btn-outline-success">Mis compras</button></a>
+                      </li>
+                    <a class="nav-link" href="pagina.html" target="blank"><img src="iconos/carrito.png" alt=60px
+                            width=60px></a>
 
                 </form>
 
@@ -70,80 +77,133 @@
     </nav>
 
     <div class="container">
-        <div style="display: flex;padding-left: 500px;">
-        <h2 class="col-12 display-4 text-capitalize mb-3">
-            <br> TIERRAS <br>
-  
-          </h2>
-        </div>
         <div class="row mt-5">
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+            <div style="width: 100%;
+            text-align: center;">
+                <h2 class="col-12 display-4 text-capitalize mb-3">
+                    TIERRAS  
 
-                <img src="iconos/tierra de hojas.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    DE HOJAS </h3>
+                </h2>
+            </div>
 
-                <p class="text-muted">
 
-                    25kilos de sustrato natural desarrollado a partir de la compostación de hojas y residuos vegetales.
-                    <br>
-                    <br>
-                    <br>
-                <h3 class="text-capitalize">$20.000</h3>
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+            <div class="row mt-5 justify-content-center">
 
-                <img src="iconos/tierra negra.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    NEGRA </h3>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                <p class="text-muted">
-                    25 kilos de sustrato natural desarrollado a partir de la descomposición de materia orgánica, ya sea
-                    proveniente de los restos de animales o
-                    de los restos de hojas que cae de los árboles.
-                    <br>
-                <h3 class="text-capitalize">$15.000 </h3>
+                    <img src="iconos/tierra de hojas.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        DE HOJAS </h3>
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+                    <p class="text-muted">
 
-                <img src="iconos/tierra organica.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    ORGÁNICA </h3>
+                        25kilos de sustrato natural desarrollado a partir de la compostación de hojas y residuos
+                        vegetales.
+                        <br>
+                        <br>
+                        <br>
+                    <h3 class="text-capitalize">$20.000</h3>
 
-                <p class="text-muted">
-                    25 kilos de sustrato natural con una parte mineral, inerte que son los restos de rocas que se han
-                    ido
-                    desintegrando hasta formar partículas de arcilla, limos y arenas.
-                    <br>
-                    <br>
-                <h3 class="text-capitalize">$20.000</h3>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
-            <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+                    <img src="iconos/tierra negra.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        NEGRA </h3>
 
-                <img src="iconos/tierra preparada.jpg" alt=200px width=250px class=card-img-top>
-                <h3 class="text-capitalize">
-                    PREPARADA </h3>
+                    <p class="text-muted">
+                        25 kilos de sustrato natural desarrollado a partir de la descomposición de materia orgánica,
+                        ya sea
+                        proveniente de los restos de animales o
+                        de los restos de hojas que cae de los árboles.
+                        <br>
+                    <h3 class="text-capitalize">$15.000 </h3>
 
-                <p class="text-muted">
-                    25 kilos de sustrato ideal para macetas con buen drenaje de agua. La tierra
-                    preparada se utiliza para un mejor crecimiento de las plantas ornamentales que colocas en las
-                    macetas y jardineras.
-                    <br>
-                <h3 class="text-capitalize">$15.000</h3>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
 
-                </p>
-                <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
-            </article>
+                    <img src="iconos/tierra organica.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        ORGÁNICA </h3>
 
+                    <p class="text-muted">
+                        25 kilos de sustrato natural con una parte mineral, inerte que son los restos de rocas que
+                        se han
+                        ido
+                        desintegrando hasta formar partículas de arcilla, limos y arenas.
+                        <br>
+                        <br>
+                    <h3 class="text-capitalize">$20.000</h3>
+
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-11 col-md-5 col-lg-3 mb-3 bg-white rounded shadow p-3 fw-light text-center">
+
+                    <img src="iconos/tierra preparada.jpg" alt=200px width=250px class=card-img-top>
+                    <h3 class="text-capitalize">
+                        PREPARADA </h3>
+
+                    <p class="text-muted">
+                        25 kilos de sustrato ideal para macetas con buen drenaje de agua. La tierra
+                        preparada se utiliza para un mejor crecimiento de las plantas ornamentales que colocas en
+                        las
+                        macetas y jardineras.
+                        <br>
+                    <h3 class="text-capitalize">$15.000</h3>
+
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="./pagina.html" class="btn btn-outline-danger">añadir al carrito</a>
+                        </div>
+                        <div class="col-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                            data-wow-duration="900ms"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <span class="timer counter alt-font appear" data-to="50" data-speed="7000">50</span>
+                            <span class="counter-title">STOCK</span>
+                        </div>
+                    </div>
+                </article>
+                <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
+                    <a href="crud.html" target="#"><button type="button" class="btn btn-success">ADMINISTRAR</button></a>
+                  </li>
+            </div>
         </div>
     </div>
 
@@ -184,11 +244,24 @@
         </div>
     </footer>
 
-
-
-
-
-
 </body>
 
 </html>
+
+<script>
+    $(document).ready(function () {
+
+        $('.counter').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+    });  
+</script>

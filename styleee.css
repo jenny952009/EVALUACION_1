@@ -1,33 +1,30 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
 }
-#principal{
-    width: auto;
-    background-color: #8a77ae;
 
+
+#principal{
+    
+    
+    width: 100%;
+    
     font-family: 'Grape Nuts', cursive;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-family: 'Playfair Display', serif;
+    background-color: #8A77AE;
 }
 
-/*-------
-#barra3{
-
-    border: 2px solid ;
-    border-radius: 40px;
-    height: 50px;
-    width: 60%;
-}
-*/
-#barra2{
-    background-color: #a6b1ad;
-    border: 2px solid ;
-    border-radius: 40px;
-
+#planta{
+    
+    height: 20vh;
+    width: 20%;
+    display: flex;
+   flex-direction: row;
+    
+    
 }
 
-/*-------------------------------------------------------------*/
 .pie-pagina {
     width: 100%;
     background-color: #42544d;
@@ -92,4 +89,18 @@
 
 .pie-pagina .grupo-2 small {
     font-size: 15px;
+}
+.info {
+
+    width: 100%;
+    height: auto;
+    flex: 50%;
+
+}
+.error{
+    background-color: #DB6C74 !important;
+}
+
+.ok{
+    background-color: #81BE4D !important;
 }
