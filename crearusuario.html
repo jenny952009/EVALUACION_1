@@ -12,6 +12,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@100&family=Playfair+Display&family=Rubik+Microbe&family=Rubik+Wet+Paint&display=swap%27');
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funciones5.js"></script>
+
 </head>
 
 <body>
@@ -40,13 +43,13 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" target="blank" href="./index.html#secProductos">Productos</a>
+                                        <a class="nav-link" target="blank" href="./Jardinería.html#secProductos">Productos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" target="blank" href="./index.html#secnosotros">Nosotros</a>
+                                        <a class="nav-link" target="blank" href="./Jardinería.html#secnosotros">Nosotros</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" target="blank" href="singin.html">Suscríbete</a>
@@ -55,20 +58,17 @@
                                         <a class="nav-link" target="blank" href="pagina2.html">Despacho</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" target="blank" href="./index.html#secContacto">Contáctanos</a>
+                                        <a class="nav-link" target="blank" href="./Jardinería.html#secContacto">Contáctanos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" target="blank" href="./index.html#secayuda">Ayuda</a>
+                                        <a class="nav-link" target="blank" href="./Jardinería.html#secayuda">Ayuda</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex">
                                     <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
-                                        <a href="../singup.html" target="blank">
+                                        <a href="singup.html" target="blank">
                                             <button type="button" class="btn btn-outline-success">Iniciar sesión</button>
                                         </a>
-                                        <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
-                                            <a href="./historial/INDEX.html" target="#"><button type="button" class="btn btn-outline-success">Mis compras</button></a>
-                                          </li>
                                             <a class="nav-link" href="pagina.html" target="blank"><img
                                                     src="iconos/carrito.png" alt=60px width=60px></a>
                                     </li>
@@ -84,54 +84,34 @@
                     <br>
                     <div style="display: flex; justify-content: center;">
                         <div style=" width:60%; ">
-<!--
 
-3   3    3   3
-  4    4    4
-    6      6
-       12
-MOVIL       PC
-col-12 | col-md-3
--->
-                            
-
-
-                            <form class="row " novalidate id="espacios">
-                                <div class="col-md-5 ">
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-4 position-relative">
                                     <label for="validationTooltip01" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="validationTooltip01" value="" required>
-                                    <div class="valid-tooltip">
-                                        Se ve bien!
-                                    </div>
+                                    <input type="text" class="form-control" id="validationTooltip01" >
+                                    <h6 id="message"></h6>
                                 </div>
-                        
-                                <div class="col-md-5 ">
+                                <div class="col-md-4 position-relative">
                                     <label for="validationTooltip02" class="form-label">Apellido</label>
-                                    <input type="text" class="form-control" id="validationTooltip02" value="" required>
-                                    <div class="valid-tooltip">
-                                        Se ve bien!
-                                    </div>
+                                    <input type="text" class="form-control" id="validationTooltip02">
+                                    <h6 id="message2"></h6>
                                 </div>
-                                <div class="col-md-5 ">
+                                <div class="col-md-4 position-relative">
                                     <label for="validationTooltipUsername" class="form-label">¿Cómo quieres ser
                                         reconocido? </label>
                                     <div class="input-group has-validation">
                                         <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
                                         <input type="text" class="form-control" id="validationTooltipUsername"
-                                            aria-describedby="validationTooltipUsernamePrepend" required>
-                                        <div class="invalid-tooltip">
-                                            Por favor escoge un nombre de usuario valido.
-                                        </div>
+                                            aria-describedby="validationTooltipUsernamePrepend" >
+                                            <h6 id="message3"></h6>  
                                     </div>
                                 </div>
-                                <div class="col-md-5 position-relative">
+                                <div class="col-md-6 position-relative">
                                     <label for="validationTooltip03" class="form-label">Ciudad</label>
                                     <input type="text" class="form-control" id="validationTooltip03" required>
-                                    <div class="invalid-tooltip">
-                                        Por favor escoge una ciudad valida.
-                                    </div>
+                                    <h6 id="message4"></h6> 
                                 </div>
-                                <div class="col-md-5 position-relative">
+                                <div class="col-md-3 position-relative">
                                     <label for="validationTooltip04" class="form-label">Región</label>
                                     <select class="form-select" id="validationTooltip04" required>
                                         <option selected disabled value="">Selecciona una opción</option>
@@ -154,10 +134,11 @@ col-12 | col-md-3
                                     </select>
 
                                 </div>
-                                <div class="col-md-5 position-relative">
+                                <div class="col-md-3 position-relative">
                                     <label for="validationTooltip05" class="form-label">Nro. telefono</label>
                                     <input type="text" class="form-control" id="validationTooltip05" value="+569"
-                                        required>
+                                        >
+                                        <h6 id="message5"></h6>
                                 </div>
                                 <div style="display: flex; justify-content: center;">
 
@@ -171,46 +152,45 @@ col-12 | col-md-3
                     </div>
                     <br>
                     <br>
-                    <div style="display: flex; justify-content: center;">
+                    <div style="display: flex; padding-left: 650px;">
                         <img src="https://images.vexels.com/media/users/3/209189/isolated/lists/d32e2ec57191d311e922458d8c5476d9-dibujado-a-mano-corazon-plantas-ornamento-trazo.png"
                             alt="" width=200px>
                     </div>
                     
-                       
-                        <footer class="pie-pagina">
-                            <div class="grupo-1">
-                                <div class="box">
-                                    <figure>
-                                        <a href="#">
-                                            <img src="iconos/logo.jpg" alt=100px width=100px>
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="box">
-                                    <h2>SOBRE NOSOTROS</h2>
-                                    <p>Comunidad fundada por vecinos del litoral central, con
-                                        la finalidad de apoyar áreas mas verdes y tambien a la
-                                        fundación sin fines de lucro Abrázame.</p>
-                                </div>
-                                <div class="box">
-                                    <h2>SIGUENOS</h2>
-                                    <div class="red-social">
-                                        <a href="https://www.facebook.com/" target="blank" class="facebook"><img src="iconos/facebook.png"
-                                                alt=50px width=50px></a>
-                                        <a href="https://www.instagram.com/" target="blank" class="instagram"><img
-                                                src="iconos/instagram.png" alt=50px width=50px></a>
-                                        <a href="https://twitter.com/" target="blank" class="twitter"><img src="iconos/twitter.png" alt=50px
-                                                width=50px></a>
-                                        <a href="https://www.youtube.com/" target="blank" class="youtube"><img src="iconos/youtube.png"
-                                                alt=50px width=50px></a>
-                                    </div>
-                                </div>
+                    <footer class="pie-pagina">
+                        <div class="grupo-1">
+                          <div class="box">
+                            <figure>
+                              <a href="#">
+                                <img src="iconos/logo.jpg" alt=100px width=100px>
+                              </a>
+                            </figure>
+                          </div>
+                          <div class="box">
+                            <h2>SOBRE NOSOTROS</h2>
+                            <p>Comunidad fundada por vecinos del litoral central, con
+                              la finalidad de apoyar áreas mas verdes y tambien a la
+                              fundación sin fines de lucro Abrázame.</p>
+                          </div>
+                          <div class="box">
+                            <h2>SIGUENOS</h2>
+                            <div class="red-social">
+                              <a href="https://www.facebook.com/" target="blank" class="facebook"><img src="iconos/facebook.png" alt=50px
+                                  width=50px></a>
+                              <a href="https://www.instagram.com/" target="blank" class="instagram"><img src="iconos/instagram.png" alt=50px
+                                  width=50px></a>
+                              <a href="https://twitter.com/" target="blank" class="twitter"><img src="iconos/twitter.png" alt=50px
+                                  width=50px></a>
+                              <a href="https://www.youtube.com/" target="blank" class="youtube"><img src="iconos/youtube.png" alt=50px
+                                  width=50px></a>
                             </div>
-                            <div class="grupo-2">
-                                <small>© 2022 <b>Pro-GaturroLabs</b> - Todos los Derechos Reservados.</small>
-                            </div>
-                            </div>
-                        </footer>
+                          </div>
+                        </div>
+                        <div class="grupo-2">
+                          <small>© 2022 <b>Pro-GaturroLabs</b> - Todos los Derechos Reservados.</small>
+                        </div>
+                        </div>
+                      </footer>
 </body>
 
 </html>

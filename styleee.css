@@ -6,7 +6,7 @@
 
 #principal{
     
-    height: 100vh;
+    
     width: 100%;
     
     font-family: 'Grape Nuts', cursive;
@@ -89,6 +89,13 @@
 
 .pie-pagina .grupo-2 small {
     font-size: 15px;
+}
+.info {
+
+    width: 100%;
+    height: auto;
+    flex: 50%;
+
 }
 .error{
     background-color: #DB6C74 !important;
