@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,22 @@
     <title>Editar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="estilooo.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@100&family=Playfair+Display&family=Rubik+Microbe&family=Rubik+Wet+Paint&display=swap%27');
-        </style>
+    <link rel="stylesheet" href="estilooo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=IBM+Plex+Sans+Arabic:wght@100&family=Playfair+Display&family=Rubik+Microbe&family=Rubik+Wet+Paint&display=swap%27');
+    </style>
 </head>
+
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="funciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funciones.js"></script>
 
     <div style="display: flex; justify-content: center;">
         <div style=" width:100%; ">
+
             <body class="bg-ligth">
                 <nav class="navbar navbar-expand-md navbar-light sticky-top 
                             bg-white navbar-main">
@@ -39,14 +42,13 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="blank"
-                                        href="./Jardinería.html#secProductos">Productos</a>
+                                    <a class="nav-link" target="blank" href="./index.html#secProductos">Productos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="blank" href="./Jardinería.html#secnosotros">Nosotros</a>
+                                    <a class="nav-link" target="blank" href="./index.html#secnosotros">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" target="blank" href="singin.html">Suscríbete</a>
@@ -55,109 +57,114 @@
                                     <a class="nav-link" target="blank" href="pagina2.html">Despacho</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="blank"
-                                        href="./Jardinería.html#secContacto">Contáctanos</a>
+                                    <a class="nav-link" target="blank" href="./index.html#secContacto">Contáctanos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="blank" href="./Jardinería.html#secayuda">Ayuda</a>
+                                    <a class="nav-link" target="blank" href="./index.html#secayuda">Ayuda</a>
                                 </li>
                             </ul>
                             <form class="d-flex">
                                 <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
-                                    <a href="../singup.html" target="blank">
+                                    <a href="./singup.html" target="blank">
                                         <button type="button" class="btn btn-outline-success">Iniciar sesión</button>
                                     </a>
-                                    <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
-                                        <a href="./historial/INDEX.html" target="#"><button type="button" class="btn btn-outline-success">Mis compras</button></a>
-                                      </li>
-                                    <a class="nav-link" href="pagina.html" target="blank"><img src="iconos/carrito.png"
-                                            alt=60px width=60px></a>
+                                <li class="nav-item" style="list-style: none; display: flex; align-items: center;">
+                                    <a href="./historial/INDEX.html" target="#"><button type="button"
+                                            class="btn btn-outline-success">Mis compras</button></a>
+                                </li>
+                                <a class="nav-link" href="pagina.html" target="blank"><img src="iconos/carrito.png"
+                                        alt=60px width=60px></a>
                                 </li>
                                 </a>
                             </form>
                         </div>
                     </div>
                 </nav>
-                <div id="formulario"style="display: flex; justify-content: center;">
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputCodigo" class="form-label">Codigo</label>
-                        <input type="number" class="form-control" id="inputCodigo" value="1">
-                        <h6 id="mensaje"></h6>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputProducto" class="form-label">Producto</label>
-                        <input type="text" class="form-control" id="inputProducto" value="colgantes">
-                        <h6 id="mensaje2"></h6>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputDesc" class="form-label">Descripción</label>
-                        <input type="text" class="form-control" id="inputDesc" value="Tamaño: 10 x 8 x 10 cm. Material: plástico" >
-                        <h6 id="mensaje3"></h6>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputCategoria" class="form-label">Categoria</label>
-                        <input type="text" class="form-control" id="inputCategoria" value="Maceteros" >
-                        <h6 id="mensaje4"></h6>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputStock" class="form-label">Stock</label>
-                        <input type="number" class="form-control" id="inputStock" value="50">
-                        <h6 id="mensaje5"></h6>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputDescuento" class="form-label">Descuento</label>
-                        <input type="text" class="form-control" id="inputDescuento" value="Sin descuentos o promociones" >
-                        <h6 id="mensaje6"></h6>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputPrecio" class="form-label">Precio</label>
-                        <input type="text" class="form-control" id="inputPrecio" value="$2.000" >
-                        <h6 id="mensaje7"></h6>
-                    </div>
-                    <div style="display: flex; justify-content: center;  ">
-                        
-                        <button type="button" class="btn btn-success">Finalizar</button>
-                    
-                    </div>
-                    
-                </div>
-                  </form>
+                <div id="formulario" style="display: flex; justify-content: center;">
+                    <form class="row ">
+                        <div class="col-md-6">
+                            <label for="inputCodigo" class="form-label">Codigo</label>
+                            <input type="number" class="form-control" id="inputCodigo" value="1">
+                            <h6 id="mensaje"></h6>
 
-                  <footer class="pie-pagina">
-                    <div class="grupo-1">
-                      <div class="box">
-                        <figure>
-                          <a href="#">
-                            <img src="iconos/logo.jpg" alt=100px width=100px>
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="box">
-                        <h2>SOBRE NOSOTROS</h2>
-                        <p>Comunidad fundada por vecinos del litoral central, con
-                          la finalidad de apoyar áreas mas verdes y tambien a la
-                          fundación sin fines de lucro Abrázame.</p>
-                      </div>
-                      <div class="box">
-                        <h2>SIGUENOS</h2>
-                        <div class="red-social">
-                          <a href="https://www.facebook.com/" target="blank" class="facebook"><img src="iconos/facebook.png" alt=50px
-                              width=50px></a>
-                          <a href="https://www.instagram.com/" target="blank" class="instagram"><img src="iconos/instagram.png" alt=50px
-                              width=50px></a>
-                          <a href="https://twitter.com/" target="blank" class="twitter"><img src="iconos/twitter.png" alt=50px
-                              width=50px></a>
-                          <a href="https://www.youtube.com/" target="blank" class="youtube"><img src="iconos/youtube.png" alt=50px
-                              width=50px></a>
                         </div>
-                      </div>
+                        <div class="col-md-6">
+                            <label for="inputProducto" class="form-label">Producto</label>
+                            <input type="text" class="form-control" id="inputProducto" value="colgantes">
+                            <h6 id="mensaje2"></h6>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputDesc" class="form-label">Descripción</label>
+                            <input type="text" class="form-control" id="inputDesc"
+                                value="Tamaño: 10 x 8 x 10 cm. Material: plástico">
+                            <h6 id="mensaje3"></h6>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputCategoria" class="form-label">Categoria</label>
+                            <input type="text" class="form-control" id="inputCategoria" value="Maceteros">
+                            <h6 id="mensaje4"></h6>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputStock" class="form-label">Stock</label>
+                            <input type="number" class="form-control" id="inputStock" value="50">
+                            <h6 id="mensaje5"></h6>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputDescuento" class="form-label">Descuento</label>
+                            <input type="text" class="form-control" id="inputDescuento"
+                                value="Sin descuentos o promociones">
+                            <h6 id="mensaje6"></h6>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPrecio" class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="inputPrecio" value="$2.000">
+                            <h6 id="mensaje7"></h6>
+                        </div>
+                        <div style="display: flex; justify-content: center;  ">
+
+                            <button type="button" class="btn btn-success">Finalizar</button>
+
+                        </div>
+                    
+                    </form>
+                </div>
+
+                
+
+                <footer class="pie-pagina">
+                    <div class="grupo-1">
+                        <div class="box">
+                            <figure>
+                                <a href="#">
+                                    <img src="iconos/logo.jpg" alt=100px width=100px>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <h2>SOBRE NOSOTROS</h2>
+                            <p>Comunidad fundada por vecinos del litoral central, con
+                                la finalidad de apoyar áreas mas verdes y tambien a la
+                                fundación sin fines de lucro Abrázame.</p>
+                        </div>
+                        <div class="box">
+                            <h2>SIGUENOS</h2>
+                            <div class="red-social">
+                                <a href="https://www.facebook.com/" target="blank" class="facebook"><img
+                                        src="iconos/facebook.png" alt=50px width=50px></a>
+                                <a href="https://www.instagram.com/" target="blank" class="instagram"><img
+                                        src="iconos/instagram.png" alt=50px width=50px></a>
+                                <a href="https://twitter.com/" target="blank" class="twitter"><img
+                                        src="iconos/twitter.png" alt=50px width=50px></a>
+                                <a href="https://www.youtube.com/" target="blank" class="youtube"><img
+                                        src="iconos/youtube.png" alt=50px width=50px></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="grupo-2">
-                      <small>© 2022 <b>Pro-GaturroLabs</b> - Todos los Derechos Reservados.</small>
+                        <small>© 2022 <b>Pro-GaturroLabs</b> - Todos los Derechos Reservados.</small>
                     </div>
-                    </div>
-                  </footer>
+        </div>
+        </footer>
 </body>
+
 </html>
